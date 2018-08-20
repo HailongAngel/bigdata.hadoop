@@ -39,6 +39,7 @@ public class ClollactionTask extends TimerTask {
 					return name.startsWith("test.log.");
 				}
 			});
+			
 
 			// 2:将文件移动到待上传目录
 			for (File file : listFiles) {
@@ -60,6 +61,7 @@ public class ClollactionTask extends TimerTask {
 			if(!exists2){
 				backDir.mkdirs();
 			}
+			
 			
 			//得到上传的是哪一个服务上的日志文件
 			String hostName = InetAddress.getLocalHost().getHostName();
