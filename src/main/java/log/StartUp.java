@@ -8,7 +8,7 @@ public static void main(String[] args) {
 	//上传
 	time.schedule(new ClollactionTask(), 0, 2*60*1000);
 	//清理
-    time.schedule(new ClollactionTask1(), 0, 60*1000);
+    time.schedule(new CleanTask(), 0, 2*60*60*1000);
 }
 
 }
