@@ -17,6 +17,7 @@ import org.apache.hadoop.fs.Path;
  * 日志收集步骤： 1：从日志目录里面查看哪需要上传的（.1 .2 .....） 2:把需要上传的文件移动到待上传目录
  * 3：上传到hdfs上(/log/2018-8-20/xxx.log) 4:移动到备份目录
  * @author root
+ * 之所以弄一个文件夹是因为上传速度没有内存交换速度快，容易造成文件丢失
  *
  */
 public class ClollactionTask extends TimerTask {

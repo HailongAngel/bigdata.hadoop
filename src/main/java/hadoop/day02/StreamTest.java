@@ -73,7 +73,7 @@ public class StreamTest {
 	 */
 	@Test
 	public void uploadFile() throws IOException {
-    FSDataOutputStream output = fs.create(new Path("/upload.txt"));
+    FSDataOutputStream output = fs.create(new Path("/wc.txt"));
 	BufferedReader br = new BufferedReader(new FileReader("D:\\upload.txt"));
 	String str = null;
 	 while((str=br.readLine())!=null) {

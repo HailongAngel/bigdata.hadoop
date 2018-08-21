@@ -38,7 +38,7 @@ public class HDFSDemo {
 	    */
 	   @Test
 	   public void testUpLoad() throws Exception, IOException {
-		   fs.copyFromLocalFile(new Path("C:\\Users\\Hailong\\Pictures\\Camera Roll\\wife.jpg"),new Path("/wife.jpg"));
+		   fs.copyFromLocalFile(new Path("E:/word.txt"),new Path("/wc.txt"));
 	   }
 	   /**
 	    * 下载文件
@@ -83,9 +83,12 @@ public class HDFSDemo {
 	   /**
 	    * 文件的状态
 	    * 列出来的都是文件
+	    * listFiles 和  listStatus去区别，listFiles有hasNext函数，可以自动递归到下面的所有文件，
+	    * listStatus如果不去传参的话，就不会自动递归，会显示当前的文件夹和目录
 	 * @throws IOException 
 	 * @throws IllegalArgumentException 
 	 * @throws FileNotFoundException 
+	 * listFiles
 	    */
 	   @Test
 	   public void listFiles() throws FileNotFoundException, IllegalArgumentException, IOException {
