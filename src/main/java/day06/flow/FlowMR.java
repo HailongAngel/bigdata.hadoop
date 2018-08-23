@@ -15,7 +15,12 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-
+/**
+ * 
+ * 流量统计
+ * @author Hailong
+ *
+ */
 public class FlowMR {
 	public static class MapTask extends Mapper<LongWritable, Text, Text, FlowBean> {
 		public String reg(String url) {
