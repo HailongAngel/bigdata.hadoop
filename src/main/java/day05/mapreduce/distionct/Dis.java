@@ -26,7 +26,7 @@ public class Dis {
 		protected void map(LongWritable key, Text value, Mapper<LongWritable, Text, Text, Text>.Context context)
 				throws IOException, InterruptedException {
 			String[] split = value.toString().split("\t");
-			if (key.get() != 0L) {
+			if (key.get() != 0L) {  //将表头数据跳过
 				for (String string : split) {
 					context.write(new Text(split[0]), new Text(split[4]));
 				}
