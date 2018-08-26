@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.Partitioner;
 public class MyPartition extends Partitioner<MovieBean, NullWritable>{
 	/**
 	 * numPartition代表多少个reduceTask
-	 * key map 端输出的key
+	 * key map端输出的key
 	 * value map端输出的value
 	 */
 	@Override
